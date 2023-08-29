@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+           min-width: 100vw;
+            min-height: 100vh;
+            background-color: #060B27;
+           
+        }
+
+        * {
+            overflow: auto;
+        }
+
+
+        /*  */
+
+        .sec-1 {
+            height: 933px;
+            width: 100%;
+            flex-shrink: 0;
+            overflow: auto;
+
+            /* background-color: #060B27; */
+            /* background: linear-gradient(to right, #7214FF, #32CAFD); */
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 60%;
+            padding-top: 55px;
+            margin: auto;
+            overflow-x: hidden;
+            align-items: center;
+        }
+
+        .headings {
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+            margin: auto;
+        }
+
+        .headings h1 {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* Heading/H1 */
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 72px;
+            /* 112.5% */
+            letter-spacing: -1.92px;
+
+            background: var(--linear-gradient, linear-gradient(180deg, #F6F6F7 0%, #7E808F 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .headings h1 img {
+            margin: 0 6px;
+        }
+
+        .headings p {
+            color: var(--neutral-gray-300, #8F9BB7);
+            text-align: center;
+            /* width: 66%; */
+            /* Heading/H5 */
+            /* font-family: Satoshi; */
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            /* 125% */
+            letter-spacing: -0.96px;
+        }
+
+        /*  */
+
+        .sec-1-btns {
+            display: flex;
+            align-items: center;
+            margin: auto;
+            gap: 30px;
+        }
+
+        .sec-1-btns button:nth-child(1) {
+            display: flex;
+            padding: 15px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 36px;
+            background: var(--primary-blue-violet, #7214FF);
+            border: none;
+            color: #FFF;
+
+            /* Button/RG */
+            /* font-size: 16px; */
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            /* 100% */
+        }
+
+
+        .sec-1-btns button:nth-child(2) {
+            display: flex;
+            padding: 15px 25px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 46px;
+            border: 1.2px solid #282D45;
+            background: linear-gradient(216deg, rgba(21, 25, 52, 0.52) 0%, rgba(21, 25, 52, 0.08) 47.92%, rgba(21, 25, 52, 0.49) 100%);
+
+            color: var(--neutral-white-200, #F6F6F7);
+
+            /* Button/RG */
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            /* 100% */
+        }
+
+        /* hero img  */
+
+        .hero-img {
+            /* width: 860px; */
+            height: auto;
+            /* width: 60%; */
+            /* height: 483.291px; */
+
+            flex-shrink: 0;
+            /* margin: auto; */
+            border-radius: 15px;
+            /* background: url(images/image\ 1.png), lightgray 50% / cover no-repeat; */
+        }
+
+
+        /* sec 1 end */
+
+
+        /* Original styles for larger screens */
+
+        .sec-1 {
+            /* Your existing styles */
+        }
+
+        .main {
+            /* Your existing styles */
+        }
+
+        .headings h1 {
+            /* Your existing styles */
+        }
+
+        .headings p {
+            /* Your existing styles */
+        }
+
+        .sec-1-btns {
+            /* Your existing styles */
+        }
+
+        .hero-img {
+            /* Your existing styles */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .main {
+                width: 80%;
+                /* Adjust the width for smaller screens */
+            }
+
+            .headings h1 {
+                font-size: 3rem;
+                /* Adjust font size for smaller screens */
+                /* Add any other adjustments you need for smaller screens */
+            }
+
+            /* Adjust other elements as needed for smaller screens */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="sec-1">
+        <main>
+            <!-- headings start -->
+            <div class="headings flex">
+                <h1> Discover
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <g clip-path="url(#clip0_310_19)">
+                            <path
+                                d="M51.7925 32.65C52.4948 31.9469 52.8892 30.9938 52.8892 30C52.8892 29.0063 52.4948 28.0531 51.7925 27.35L37.6525 13.2025C36.949 12.499 35.9949 12.1038 35 12.1038C34.0051 12.1038 33.051 12.499 32.3475 13.2025C31.644 13.906 31.2488 14.8601 31.2488 15.855C31.2488 16.8499 31.644 17.804 32.3475 18.5075L40.0875 26.25L11.25 26.25C10.2555 26.25 9.30164 26.6451 8.59837 27.3484C7.89511 28.0516 7.50002 29.0055 7.50002 30C7.50002 30.9946 7.89511 31.9484 8.59837 32.6517C9.30163 33.3549 10.2555 33.75 11.25 33.75L40.0875 33.75L32.3475 41.49C31.9992 41.8384 31.7229 42.2519 31.5344 42.707C31.3458 43.1621 31.2488 43.6499 31.2488 44.1425C31.2488 44.6351 31.3458 45.1229 31.5344 45.578C31.7229 46.0332 31.9992 46.4467 32.3475 46.795C32.6958 47.1434 33.1094 47.4197 33.5645 47.6082C34.0196 47.7967 34.5074 47.8937 35 47.8937C35.4926 47.8937 35.9804 47.7967 36.4355 47.6082C36.8907 47.4197 37.3042 47.1434 37.6525 46.795L51.7925 32.65Z"
+                                fill="#7214FF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_310_19">
+                                <rect width="60" height="60" fill="white" transform="translate(60) rotate(90)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    Corelate
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <g clip-path="url(#clip0_310_19)">
+                            <path
+                                d="M51.7925 32.65C52.4948 31.9469 52.8892 30.9938 52.8892 30C52.8892 29.0063 52.4948 28.0531 51.7925 27.35L37.6525 13.2025C36.949 12.499 35.9949 12.1038 35 12.1038C34.0051 12.1038 33.051 12.499 32.3475 13.2025C31.644 13.906 31.2488 14.8601 31.2488 15.855C31.2488 16.8499 31.644 17.804 32.3475 18.5075L40.0875 26.25L11.25 26.25C10.2555 26.25 9.30164 26.6451 8.59837 27.3484C7.89511 28.0516 7.50002 29.0055 7.50002 30C7.50002 30.9946 7.89511 31.9484 8.59837 32.6517C9.30163 33.3549 10.2555 33.75 11.25 33.75L40.0875 33.75L32.3475 41.49C31.9992 41.8384 31.7229 42.2519 31.5344 42.707C31.3458 43.1621 31.2488 43.6499 31.2488 44.1425C31.2488 44.6351 31.3458 45.1229 31.5344 45.578C31.7229 46.0332 31.9992 46.4467 32.3475 46.795C32.6958 47.1434 33.1094 47.4197 33.5645 47.6082C34.0196 47.7967 34.5074 47.8937 35 47.8937C35.4926 47.8937 35.9804 47.7967 36.4355 47.6082C36.8907 47.4197 37.3042 47.1434 37.6525 46.795L51.7925 32.65Z"
+                                fill="#7214FF" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_310_19">
+                                <rect width="60" height="60" fill="white" transform="translate(60) rotate(90)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    Optimize
+                </h1>
+
+                <p>We Discover Infrastructure, Corelate With Business, Optimize With Container / Serverless Platform</p>
+            </div>
+            <!-- headings ends -->
+
+            <div class="sec-1-btns flex">
+                <button>Get a free demo</button>
+                <button>Free trial</button>
+            </div>
+            <!-- btns end -->
+
+            <div class="hero-img">
+                <img src="images/image 1.png" alt="">
+            </div>
+
+
+        </main>
+    </section>
+
+
+</body>
+
+</html>

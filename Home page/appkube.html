@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset some default styles */
+body, div, p, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Global styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Card container */
+.clint-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual card */
+.c-card-1 {
+    flex: 1;
+    max-width: calc(33.33% - 20px);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.c-card-1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Client profile section */
+.clint-profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.clint-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Review section */
+.clint-review {
+    padding: 10px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.clint-review p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        v class="clint-cards container">
+        <!-- card -- 1  start-->
+        <div class="c-card-1">
+            <div class="c-card">
+                <div class="clint-profile">
+                    <img src="images/Avatar.png" alt="">
+                    <div class="profile-info">
+                        <p>Cameron Williamson</p>
+                        <p>Web Designer</p>
+                    </div>
+                    <div class="profile-icons">
+                        <img src="images/”.png" alt="">
+                    </div>
+                </div>
+                <div class="clint-review">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cum perferendis sapiente.
+                        Ipsum blanditiis provident magnam repellendus. Voluptatum, quidem perspiciatis!</p>
+                </div>
+
+            </div>
+            <!-- <div class="c-card-bg">
+
+                </div> -->
+        </div>
+        <!-- card -- 1  end-->
+
+        <!-- card 2 start -->
+        <div class="c-card-1">
+            <div class="c-card">
+                <div class="clint-profile">
+                    <img src="images/Avatar.png" alt="">
+                    <div class="profile-info">
+                        <p>Cameron Williamson</p>
+                        <p>Web Designer</p>
+                    </div>
+                    <div class="profile-icons">
+                        <img src="images/”.png" alt="">
+                    </div>
+                </div>
+                <div class="clint-review">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cum perferendis sapiente.
+                        Ipsum blanditiis provident magnam repellendus. Voluptatum, quidem perspiciatis!</p>
+                </div>
+
+            </div>
+            <!-- <div class="c-card-bg"> -->
+
+            <!-- </div> -->
+        </div>
+        <!-- card --2 end -->
+
+        <!-- card 3 starts -->
+        <div class="c-card-1">
+            <div class="c-card">
+                <div class="clint-profile">
+                    <img src="images/Avatar.png" alt="">
+                    <div class="profile-info">
+                        <p>Cameron Williamson</p>
+                        <p>Web Designer</p>
+                    </div>
+                    <div class="profile-icons">
+                        <img src="images/”.png" alt="">
+                    </div>
+                </div>
+                <div class="clint-review">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis cum perferendis sapiente.
+                        Ipsum blanditiis provident magnam repellendus. Voluptatum, quidem perspiciatis!</p>
+                </div>
+
+            </div>
+            <!-- <div class="c-card-bg">
+
+                </div> -->
+        </div>
+        <!-- card 3 ends -->
+
+
+    </div>
+    </div>
+</body>
+
+</html>
